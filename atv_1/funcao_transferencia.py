@@ -46,7 +46,7 @@ def funcao_transferencia(s, R, C):
 
 # Definindo os parâmetros
 f = np.logspace(-1, 4, 1000)  # Frequências de 0,1 Hz a 10 kHz
-R = 100  # Resistência em Ohms
+R = 10000  # Resistência em Ohms
 F = 1.45  # Frequência de corte em Hz
 Q = 1  # Fator de qualidade
 
