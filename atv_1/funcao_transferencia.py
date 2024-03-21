@@ -58,6 +58,9 @@ print(f"Valor do capacitor: {C}")
 # Calculando os valores dos capacitores
 C1, C2 = calcular_capacitores(R, F, Q)
 
+print(f"Valor do capacitor: {C1}")
+print(f"Valor do capacitor: {C2}")
+
 # Definindo o coeficiente de amortecimento
 zeta = 0.7
 
@@ -77,10 +80,3 @@ print(f"Kd: {Kd}")
 # Calculando a resposta em frequência
 H = filtro_passa_baixas(f, R, C)
 
-# Plotando a resposta em frequência
-plt.plot(f, 20 * np.log10(np.abs(H)), label="Magnitude (dB)")
-plt.plot(f, np.angle(H), label="Fase (graus)")
-plt.legend()
-plt.xlabel("Frequência (Hz)")
-plt.ylabel("Magnitude (dB) / Fase (graus)")
-plt.show()
